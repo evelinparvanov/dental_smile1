@@ -67,14 +67,14 @@ body {
     width: 100%;
     text-align: center;
     background-color: rgb(255, 255, 255);
-    height: 70px;
+    height: 90px;
     padding: 0 10px;
     justify-content: center;
 }
 
 
 .nav-main .logo {
-    height: 70px; /* Adjust the height as needed */
+    height: 90px;
    margin-right: 130px;/* Space between the logo and the header text */
     
 }
@@ -337,7 +337,8 @@ footer {
 /* Reviews*/
 
 .main-content {
-    height: fit-content;
+    height: 100%;
+    margin: 5% 0;
 }
 
 .main-content h1 {
@@ -347,17 +348,23 @@ footer {
     color: #0F4C75;
     
 }
+
 .reviews-carousel {
-    max-width: 800px; /* Adjust max-width as needed */
+    display: flex;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 500px; /* Adjust max-width as needed */
     margin: 0 auto;
     padding: 20px;
     position: relative;
-    overflow: hidden;
+    
 }
 
 /* Container for reviews */
 .reviews {
     display: flex;
+    text-wrap: wrap;
     transition: transform 0.5s ease;
 }
 
@@ -366,15 +373,13 @@ footer {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 15px;
-    min-width: 300px; /* Adjust minimum width as needed */
-    margin-right: 20px; /* Adjust spacing between reviews */
+    padding: 20px;
+    min-width: 200px; /* Adjust minimum width as needed */
+    max-width: 400px;
+    margin-right: 1%; /* Adjust spacing between reviews */
     flex: 0 0 auto;
-    display: none; /* Hide all reviews by default */
-}
-
-.review:first-child {
-    display: block; /* Display the first review initially */
+    box-sizing: border-box;
+    
 }
 
 /* Header section of the review */
@@ -420,20 +425,35 @@ footer {
 }
 
 /* Controls */
-.controls {
-    text-align: center;
-    margin-top: 20px;
+/* .control-prev {
+    position: absolute;
+    top: 50px;
+    width: 50px;
+    margin-top: 5%;
+    margin-left: -5%;
 }
 
-.controls button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+.control-next {
+    position: absolute;
+    top: 50px;
+    width: 50px;
+    margin-top: 5%;
+    margin-left: 85%;
+}
+
+.control-btn {
+    background: none;
     border: none;
+    font-size: 2em;
     cursor: pointer;
-    margin: 0 10px;
+    user-select: none;
+    color: #007bff;
 }
 
-.controls button:hover {
-    background-color: #0056b3;
+.control-btn:hover {
+    color: #0056b3;
 }
+
+.control-btn:focus {
+    outline: none;
+} */
