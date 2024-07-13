@@ -52,6 +52,70 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <div class="services-header">
+            <h1>НАШИТЕ УСЛУГИ</h1>
+        </div>
+        <div class="services-container">
+            <header>
+                <h2>НАШИТЕ УСЛУГИ</h2>
+                <button class="view-all">View All</button>
+            </header>
+            <div class="main-service" id="mainService">
+                <img id="mainImage" src="images/images.jpeg" alt="Clear Aligners">
+                <div class="main-content">
+                    <h2 id="mainTitle">Ортодонтия</h2>
+                    <p id="mainDescription">Clear aligners are orthodontic devices that are transparent, plastic forms of dental braces used to adjust teeth...</p>
+                    <button id="learnMore">Learn More</button>
+                </div>
+            </div>
+            <div class="other-services">
+                <div class="service" onclick="showService('Ортодонтия', 'images/images.jpeg', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum doloremque necessitatibus distinctio ab modi sunt saepe voluptatem cupiditate neque similique nobis sit quasi, quos impedit nemo veritatis animi? Similique.')">
+                    <img src="images/images.jpeg" alt="Dental Implants">
+                    <h3>Ортодонтия</h3>
+                </div>
+                <div class="service" onclick="showService('Лечение с лазер', 'images/lazer.jpg', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et earum doloremque necessitatibus distinctio ab modi sunt saepe voluptatem cupiditate neque similique nobis sit quasi, quos impedit nemo veritatis animi? Similique.')">
+                    <img src="images/lazer.jpg" alt="Dental Implants">
+                    <h3>Лечение с лазер</h3>
+                </div>
+                <div class="service" onclick="showService('Детска стоматология', 'images/images.jpeg', 'Dental treatment refers to...')">
+                    <img src="images/images.jpeg" alt="Dental Treatment">
+                    <h3>Детска стоматология</h3>
+                </div>
+                <div class="service" onclick="showService('Имплантология', 'images/MiG-Dent_Uslugi_2-Dentalna-implanolog.jpg', 'Ozone cleaning is a modern dental...')">
+                    <img src="images/MiG-Dent_Uslugi_2-Dentalna-implanolog.jpg" alt="Ozone Cleaning">
+                    <h3>Имплантология</h3>
+                </div>
+                <div class="service" onclick="showService('Ендодонтия', 'images/images.jpeg', 'Dental crowns are tooth-shaped...')">
+                    <img src="images/images.jpeg" alt="Dental Crowns">
+                    <h3>Ендодонтия</h3>
+                </div>
+                <div class="service" onclick="showService('Хирургия', 'images/images.jpeg', 'Dental crowns are tooth-shaped...')">
+                    <img src="images/images.jpeg" alt="Dental Crowns">
+                    <h3>Хирургия</h3>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function showService(title, imageUrl, description) {
+                const mainService = document.getElementById('mainService');
+                const mainImage = document.getElementById('mainImage');
+                const mainTitle = document.getElementById('mainTitle');
+                const mainDescription = document.getElementById('mainDescription');
+
+                // Add transition effects
+                mainService.style.opacity = 0;
+                setTimeout(() => {
+                    mainTitle.innerText = title;
+                    mainImage.src = imageUrl;
+                    mainDescription.innerText = description;
+                    mainService.style.opacity = 1;
+                }, 300);
+            }
+        </script>
+    </main>
     
 
     <footer>

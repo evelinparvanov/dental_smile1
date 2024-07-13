@@ -75,7 +75,7 @@ body {
 
 .nav-main .logo {
     height: 90px;
-   margin-right: 130px;/* Space between the logo and the header text */
+   margin-right: 100px;/* Space between the logo and the header text */
     
 }
 
@@ -590,6 +590,180 @@ footer {
     border: 0;
 }
 
+/* Services */
+
+.services-container {
+    max-width: 1200px;
+    margin: 5% auto;
+    padding: 20px;
+}
+
+.services-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% auto;
+    color: #0F4C75;
+}
+
+.services-container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.services-container header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.services-container header .view-all {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main-service {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.main-service img {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.main-service .main-content {
+    flex: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.main-service h2 {
+    margin-top: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.main-service p {
+    margin: 10px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.main-service button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.other-services {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 200px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.service h3 {
+    margin: 10px 0 0 0;
+}
+
+/* Team */
+
+.team-header {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin:  0 auto;
+}
+
+.team-header h1 {
+    color: #0F4C75;
+    margin: 3% auto;
+}
+
+.team-header p {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Add some space between team members */
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #000; /* Corrected to make the border visible */
+    max-width: 400px;
+    margin: 2% 10px ;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff; /* Background color for better readability */
+}
+
+.person img {
+    width: 256px;
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+.person h1, .person p {
+    margin: 0;
+    padding: 5px;
+}
+
+.person h1 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.person p {
+    color: #666;
+    font-size: 1em;
+}
 
 /* ----------Responsive Css----------  */
 nav .fas {
