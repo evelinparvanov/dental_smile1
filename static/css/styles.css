@@ -367,17 +367,20 @@ footer {
     display: flex;
     text-wrap: wrap;
     transition: transform 0.5s ease;
+    gap: 20px;
+    max-width: 1240px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 /* Individual review */
 .review {
+    scroll-snap-align: start;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
-    min-width: 200px; /* Adjust minimum width as needed */
-    max-width: 400px;
-    margin-right: 1%; /* Adjust spacing between reviews */
+    width: 400px; /* Adjust minimum width as needed */
     flex: 0 0 auto;
     box-sizing: border-box;
     
@@ -884,4 +887,32 @@ nav .fas {
         display: inline;
     }
     
+}
+
+.reviews::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+.reviews::-webkit-scrollbar-track {
+    background: transparent; /* Background of the scrollbar track */
+}
+
+reviews::-webkit-scrollbar-thumb {
+    background: #888; /* Background of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.reviews::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Background of the scrollbar thumb on hover */
+}
+
+.reviews {
+    scrollbar-width: thin; /* Width of the scrollbar for Firefox */
+    scrollbar-color: #888 transparent; /* Thumb color and track color for Firefox */
+}
+
+.reviews ::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
 }
